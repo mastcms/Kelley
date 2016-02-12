@@ -1,0 +1,513 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #5AADBB;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+$pCC:#FFD27E;
+$pC: #fff;
+$sC: #fffb;
+body{
+	-webkit-font-smoothing: antialiased;
+
+}
+.pbC{
+	background-color: $pC;
+}
+.sbC{
+	background-color: $sC !important;
+}
+.skinney{
+	font-weight: 300;
+}
+.lPadding{
+	padding-left:5%;
+}
+.center{
+	text-align: center;
+}
+.fT{
+	color: #333; 
+	border-bottom: 1px dashed #333;
+}
+.zT{
+	position: relative;
+	div{
+
+		display: inline-block;
+		overflow: hidden;
+	}
+}
+.iShadow{
+	box-shadow: inset 1px 3px 4px 2px #777;
+	&.strong{
+		box-shadow: inset 1px 3px 3px 1px #111;
+	}
+	&.fake{
+		border-radius: 5000px;
+		border: 1px solid #ddd;
+		box-shadow: 0px 0px 0px #111;
+		&.f2{
+
+			display: inline-block;
+			overflow: hidden;
+			border-radius: 5000px;
+			border: 7px solid #95AEF3;
+			box-shadow: 0px 0px 0px #111;
+			width: 350px;
+			height: 350px;
+			margin-right: -130px; 
+		}
+	}
+}
+.oShadow{
+	box-shadow: inset 3px 3px 5px #777;
+}
+.nwPadding{
+	padding: 0px;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+.navbar {
+	/*
+	position: relative !important;
+	*/
+	height: 70px;
+	border-bottom:1px solid #B7914A !important;
+	.uh{
+		position: absolute;
+
+		.bName{
+			width: 200px;
+		}
+		&:hover{
+			text-decoration:none;
+		}
+		div{
+			display: inline-block;
+			brand{
+				font-size: 22px;
+				font-weight: 500;
+				color:#333;
+			}	
+		}
+		img{
+			display: inline-block;
+			width: 90px;
+		}
+	}
+	.navbar-right{
+		margin-top: 20px;
+		margin-right: 3px;
+		a{
+			padding: 10px 15px 10px;
+		}
+	}
+	.active a{
+			background-color: #FAEBC9 !important;
+			color:#222;
+	}
+}
+.row{
+	&.rowWell{
+		background-color: #efefef;
+	}
+	.cWell{
+		background-color:#f1f1f1;
+		padding: 8px;
+		&.SMI{
+			margin-top: 20px;
+			padding: 10px 45px;
+			.row{
+
+				img{
+					display: block;
+					margin: 0 auto;
+					padding: 7px 0px;
+					width: 37px;
+				}
+			}	
+		}
+	}
+	.iContent{
+		width: 195px;
+		margin: 0 auto;
+	}
+	.bImage	{
+		height: 300px;
+	    background-size: 100%;
+		background-repeat: no-repeat;
+	    background-position: center;	
+	    position: relative;
+	}
+}
+/**/
+.runoff{
+	
+	position: relative;
+	
+	z-index: 100;
+}
+.hContainer{
+	height: 600px;
+	.hImage{
+		margin: 0 auto; 
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;	
+		position: relative;
+		border-radius: 1000px;
+		border: 14px solid #B9D7EA;
+		&.ih1{
+			height: 490px;
+			width: 490px;
+			margin: 0 auto;
+			overflow: hidden;
+			display: block;
+		}
+	}
+}
+.rowSMI{
+	width: 300px;
+	float:right;
+}
+.SMI{
+	width: 40px;
+}
+.copyR{
+	color:#bbb;
+	float:right;
+	margin-top: 140px;
+	padding-right: 20px;
+	p{
+		text-align: center;
+		.FF{
+			position: fixed;
+			bottom: 28px;
+			right: 25px;
+		}
+	}
+}
+.sAbout{
+	text-align: center;
+	margin-bottom: 40px;
+	color: #555;
+	.in{
+		.cImage{
+			display: inline-block;
+			text-align: center;
+			width: 160px !important;
+			height: 160px;
+		    background-size: cover;
+		    border-radius: 500px;
+		    border: 5px solid #F2DBAB;
+		}
+		.iContent{
+			
+		}
+	}
+}
+$hack: 40px;
+.rowWell{
+	background-repeat: no-repeat;
+    background-position: center;	
+}
+.wImage{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.cImage{
+	background-repeat: no-repeat;
+	background-position: center;	
+	width: 100%;
+	height: 230px;
+}
+.office{
+	box-shadow: 3px 3px 3px #999;
+	margin-top: -200px;
+	margin-bottom: 150px;
+	width: 100%;
+}
+.oHead{
+	padding: 0px 20px 5px;
+	margin: 0px 0px 0px;
+	border-bottom: 2px solid #333;
+}
+.cFeatured{
+	box-shadow: 2px 3px 4px 2px #666;
+	.text{
+		padding: 20px 0px;
+	}
+}
+.baBottom{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	padding-left:10px;
+	background-color: rgba(255,255,255,0.6);	
+}
+
+.fancy{
+	z-index: 40;
+}
+.bDrops{
+	background-image: url('/assets/images/kArt2a.png');
+    background-size: 45PX;
+    background-repeat: repeat;
+    background-position: center;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+    margin-top: -20px;
+    z-index: 1;
+}
+.beaut{
+	margin-top: 30px;
+	margin-left: 20px;
+	max-width: 380px;
+}
+.row{
+	&.caroRow{
+		background-color:#999;
+		padding: 20px 0px;
+		margin-right: -33px !important;
+		margin-left: -30px !important;
+	}
+	&.mbRow{
+		margin-bottom: 0px;
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+	}
+	.sBanner{
+		position: absolute;
+		box-shadow: 2px 2px 2px 2px #666;
+		margin: 20px;
+		bottom: 0;
+		left: 0;
+		padding:15px 20px;
+		background-color: rgba(255,255,255,0.80);
+	}
+}
+/* SLICK */
+.slick-next{
+	right:10px;
+}
+.slick-prev{
+	left:10px;
+	z-index: 50;
+}
+.slick-prev:before, .slick-next:before { 
+    color:#111 !important;
+}
+
+    .cW{
+        position: relative;
+        width: 100%;
+        /*
+        margin: 35px auto 60px;  
+        */
+	    .slider-for{
+	        width: 100%;
+	    }
+	    .main{
+	        height:  88vh;
+	        width: 100%;
+	        margin:0px 00px 0px 0px!important;
+	        background-size: 100%;
+	        background-repeat: no-repeat;
+	        background-position: center bottom;
+	        .banner{
+	        	width: 100%;
+	        	height:140px;
+	        	vertical-align: center;
+	        	background-color: rgba(255,255,255,0.37);
+	       		padding: 100%; 
+	       		.bAbs{
+	       			position: absolute;
+	       			top:47%;
+	       			right: 10%;
+	       			left: 10%;
+	       			color: #111;
+	       			text-align: center;
+	       			&.b2{
+	       				top:43%;
+	       			}
+	       		}
+	        }
+	        .slick-dots{
+	        	margin-bottom: -50px;
+	        }
+	    }
+
+    }
+    .tile{
+      display: inline-block;
+      width: 100px;
+      height: 66px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }    .slick-arrow:after{
+      color: black;
+      background-color:black;
+    }
+
+/* END OF SLICK */
+
+/* BOOTSTRAP XS SIZE */
+@media (max-width: 767px){
+	.navbar-collapse{
+		border:none;
+	}
+	.navbar {
+		button{
+			margin-top: 10px;
+			padding-top: 0px;
+			span{
+				&.uhM{
+					color:#666;
+					line-height: 27px;
+					vertical-align: text-top;
+				}
+				font-weight: 500;
+				text-align: center;
+				margin:0 auto;
+			}
+		}
+		height: 70px;
+		.uh{
+			
+			div{
+				display: inline-block;
+				brand{
+					font-size: 22px;
+					font-weight: 500;
+					color:#333;
+				}	
+			}
+			img{
+				display: inline-block;
+				width: 80px;
+				margin-left: 15px;
+			}
+		}
+		.navbar-right{
+			margin: 60px 6px;
+			border: 1px solid #ccc;
+			.active a{
+					/* background-color: #F8F1E3 !important; */
+					background: none;
+					background-color: rgba(255, 255, 255, 0.52);
+					color:#222;
+			}
+		}
+	}
+	.hContainer{
+		height: 600px;
+		margin-bottom: 130px;
+		.hImage{
+			margin: 0 auto; 
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;	
+			position: relative;
+			border-radius: 1000px;
+			border: 14px solid #B9D7EA;
+			&.ih1{
+				height: 490px;
+				width: 490px;
+				left: 20%;
+				overflow: hidden;
+				position: absolute;
+				display: block;
+			}
+		}
+	}
+}
+
+@media (min-width: 967px){
+	.navbar-right{
+		margin-right:5%;
+	}
+	.lPadding{
+		padding-left: 2%;
+	}
+}
+/*
+@media(max-width: 400px){
+	.cW{
+		margin-top: 0px;
+					height: 600px;
+
+		.main{
+			.banner{
+				margin-top: 360px;
+				h3{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+*/
+
+@media(min-width: 992px){
+	/*
+	.cW{
+		margin-top: 50px;
+		height: 570px;
+
+		.main{
+			.banner{
+				margin-top: 375px;
+				h3{
+				}
+			}
+		}
+	}
+	*/
+	.bImage{
+		height:450px !important;
+	}
+	.bAbs{
+		margin-top: -70px !important;
+	}
+	.lPadding{
+		padding-left: 0%;
+	}
+}
+/* BOOTSTRAP MD SIZE */
+@media(min-width: 1200px){
+	.lPadding{
+		padding-left: 0%;
+	}
+}
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
