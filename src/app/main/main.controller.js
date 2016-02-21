@@ -7,6 +7,20 @@
 
   /** @ngInject */
   function MainController($timeout, webDevTec, toastr) {
+      $(document).ready(function(){
+        $('.cModal').hide();
+      })
+      $('.cccontact').click(function(){
+        console.log('wat');
+        $('.cModal').fadeIn('slow');
+        console.log('waddt');
+        return false;
+      });
+      $('.cModal').on('click', function(){
+        $('.cModal').fadeOut('slow');
+      });
+
+
     var vm = this;
 
     vm.awesomeThings = [];

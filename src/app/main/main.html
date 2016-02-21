@@ -1,5 +1,20 @@
-<div class="container-fluid sbC nwPadding">
+<div class="container-fluid sbC wat nwPadding special">
 
+
+ <div id='cModal' class='cModal' 
+ style=''>
+  <div class='contactPanel'>
+
+    <h1>Let's talk!</h1>
+    <h5>Leave me a message and I'll call you as soon as possible.</h5>
+    <input placeholder='Name'></input>
+    <input placeholder='Email'></input>
+    <input placeholder='Phone Number'></input>
+    <textarea placeholder='comment'></textarea>
+    <span class='pull-right aux aux2' style='margin-top:5px;'>Talk to you soon!</span>
+    <span class='xOut'>X</span>
+  </div>
+ </div>
 
 
     <nav class="navbar navbar-default navbar-fixed-top pbC">
@@ -25,44 +40,53 @@
         </div>
         <div id="navbar" class="navbar-collapse"  ng-class="{collapse: isCollapsed}">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#about">Featured Listings</a></li>
-            <li><a href="#contact">MLS Search</a></li>
-            <li><a href="#about">Sellers</a></li>
-            <li><a href="#contact">Buyers</a></li>
+            <li class="active wwat"><a href="#about">Featured Listings</a></li>
+            <li><a class='wwat' href="#contact">MLS Search</a></li>
+            <li><a class='wwat' href="#about">Sellers</a></li>
+            <li><a class='wwat' href="#contact">Buyers</a></li>
             <!--
             <li><a href="#contact">Testimonials</a></li>
             -->
-            <li><a href="#contact">Background</a></li>
+            <li><a class='wwat' href="#contact">Background</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 </div>
 <!-- BODY -->
-<div class="container nwPadding">
+<div class="container nwPadding negwMargin">
 <br/><br/>
   <!-- PERSONALITY - CARO IMAGE-->
   <div class="cW">
     <div id="" class="slider-for">
-      <div class="main iShadow fake" style='background-image: url("assets/images/img5.jpg");'>
+      <div class="main iShadow fake" >
+        <div class='sWrapper'>
+          <img src='assets/images/img1.jpg'>
+        </div>
         <div class="banner">
           <div class="bAbs b2">
-            <h2 class='skinney'>Providing clients with the best possible service</h2>
-            <h3  class='skinney'>Commited to serving you</h5>
+            <h1 class='ski special'>Providing clients with the best possible service</h2>
+            <h2  class='ski special'>Commited to serving you</h5>
           </div>
         </div>
       </div>
-      <div class="main iShadow fake" style='background-image: url("assets/images/img4.jpg");'>
+      <div class="main iShadow fake" > 
+       <div class='sWrapper'>
+          <img src='assets/images/img3.jpg'>
+        </div>
         <div class="banner">
           <div class="bAbs">
-            <h2  class='skinney'>The art of selling real estate</h2>
+            <h1  class='ski special'>The art of selling real estate</h2>
           </div>
         </div>
       </div>
-      <div class="main iShadow fake" style='background-image: url("assets/images/img2.jpg");'>
+      <div class="main iShadow fake" >
+        <div class='sWrapper'>
+          <img src='assets/images/img5.jpg'>
+        </div>
         <div class="banner">
           <div class="bAbs">
-            <h2 class='skinney'>Love where you live</h2>
+            <h1 class='ski special'>Love where you live</h2>
           </div>
         </div>
       </div>
@@ -72,62 +96,44 @@
 <br/>
 <div class='container hContainer'>
 <br/><br/><br/><br/>
-<div class='row'>
+<div class='row frow'>
   <div class='visible-xs hidden-sm hidden-md hidden-ls hidden-xl hidden-sm center'>
-    <h1 class='col-xs-12 skinney fT'>
-      Featured Property
+    <h1 class='col-xs-12 skinney' style='padding:15px;'>
+      Featured Property:
     </h1>
-    <h3 class='skinney'>16444 Los Gatos Almaden Rd.</h3>
-    <h4 class='skinney lPadding'> 95032 Los Gatos, California</h4>
+    <h2 class='skinney lPadding'>16444 Los Gatos Almaden Rd.</h2>
+    <h3 class='skinney lPadding'> 95032 Los Gatos, California
+    <span class='aux'>sold</span>
+    </h3>
     <br/>
   </div>
-  <div class='col-xs-12 col-sm-8 col-md-6 runoff'>
-    <div class="hImage ih1" style='background-image: url("assets/images/fHouse.jpg");'></div>
+  <div class='col-xs-12 col-sm-8 col-md-7 col-lg-6 runoff'>
+    <div class="wrapper">
+      <div class="hImage ih1 oShadow" style='background-image: url("assets/images/fHouse.jpg");'></div>
+    </div>
   </div>
-  <div class='hidden-xs col-sm-4 col-md-6 lPadding'>
-    <h1 class='skinney fT'>
-      Featured Property
+  <div class='hidden-xs col-sm-4 col-md-5 col-lg-6 lPadding pDown fix special'>
+    <!--<h1 class='fT'>
+      <span class='special'>Featured Property</span>
+                  <h3 class='aux skinney'>Sold</h3>
     </h1>
-    <h3 class='skinney'>16444 Los Gatos Almaden Rd.</h3>
-    <h4 class='skinney lPadding'> 95032 Los Gatos, California</h4>
+    -->
+    <h3 class=''>16444 Los Gatos Almaden Rd.</h3>
+    <h4 class=''>
+      95032 Los Gatos, California
+    </h4>
     <br/>
-    <ul>
-      <li><h4 class='skinney'>3 bedroom</h4></li>
-      <li><h4 class='skinney'>2 bathrooms</h4></li>
-      <li><h4 class='skinney'>1400 sq feet</h4></li>
-      <li><h4 class='skinney'>1/4 acre backyard</h4></li>
+    <ul class=''style='margin-left:35px;'>
+          <span class='aux'>sold</span>
+
+      <li><h5 class=''>3 bedroom</h5></li>
+      <li><h5 class=''>2 bathrooms</h5></li>
+      <li><h5 class=''>1400 sq feet</h5></li>
+      <li><h5 class=''>1/4 acre backyard</h5></li>
+      <h4 style="text-decoration:underline; padding-top:13px;"><a href='#/'>Learn more</a></h4>
   </div>
 </div>
-        <!--
-        <div class="row caroRow">
-          <div class="col-sm-9 col--6">
-            <div class='cWell cFeatured'>
-              <div class="bImage" style='background-image: url("assets/images/fHouse.jpg");'><h1 class='baBottom'>Featured Property</h1></div>
-              <div class='text'>
-                <h4 style='padding:10px 0px 0px 10px;'>16388 Los Gatos Almaden Rd. 95032 Los Gatos, California</h4>
-                <p  style='padding:0px 0px 0px 10px;'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 hidden-xs">
-            <div class="">
-              <div class='cImage' style='background-image: url("assets/images/Kelley.jpg")'>
-              </div>
-            </div>
-            <div class='iContent'>
-              <h3>Kelley Michelucci</h3>
-              <h6>(408)348-9804</h6>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                <br/>
-                <a href='#/' style='display:block;text-align:right;padding:5px;'>read more</a>
-              </p>
-            </div> 
-          </div>
-        </div>
-        -->
+<br/><br/><br/><br/>
     </div>
     <div class='container nwPadding'>
     <br/><br/><br/>
@@ -139,34 +145,43 @@
 
           <div class='iContent'>
               <div class='zT'>
-                <div class="iShadow fake f2" style=' background-image: url("assets/images/sMap.png")'></div>
-                <div class='cImage' style='background-image: url("assets/images/Kelley.jpg")'>
+                <div class="iShadow  oShadow fake f2" style=' background-image: url("assets/images/sMap.png")'></div>
+                <div class='cImage oShadow' style='background-image: url("assets/images/Kelley.jpg")'></div>
+              <div class='clear-fix'>
+              </div>
+
+              <div class='pDown fix special'>
+                <h2 style='padding-bottom:9px;'>Kelley Michelucci</h2>
+                <h5>444 El Camino, Bellmont 95043 California</h5>
+                <h5>Kelley@KelleyMichelucci.com</h5>
+                <h5>(408)348-9804</h5>
+                <h4 style="text-decoration:underline; padding-top:13px;"><a href='#/'>Learn more</a></h4>
               </div>
             </div>
-            <h3>Kelley Michelucci</h3>
-            <h6>444 El Camino, Bellmont 95043 California</h6>
-            <h6>Kelley@KelleyMichelucci.com</h6>
-            <h6>(408)348-9804</h6>
-            <h5 style="text-decoration:underline"><a href='#/'>Learn more</a></h5>
           </div> 
         </div>
       </div>
+
+    <br/><br/>
+
+
     <div class='copyR visable-xs hidden-sm hidden-md hidden-lg hidden-xl'>
       <p>
-        <img class='' src='/assets/images/watercoloricons.png' width="200px"><BR/>
-        &copy; Kelley Michellucci 2016
+        <img class='' src='/assets/images/watercoloricons.png' width="200px" style='padding-right:30px;'><BR/>
+        <span class='aux aux2 FF FF3 cccontact' style='' id='contact'>Let's Talk</span>
       </p>
     </div>
     <div class='copyR visable-sm hidden-xs '>
       <p>
-        <img class='FF' src='/assets/images/watercoloricons.png' width="200px"><BR/>
-        
-        &copy; Kelley Michellucci 2016
+        <img class='FF FF2' src='/assets/images/watercoloricons.png' width="200px"><BR/>
+        <span class='aux aux2 FF cccontact' style='' id='contact'>Let's Talk</span>
       </p>
     </div>
     <div class='pull-left fancy'>
       <img src="/assets/images/kArt2.png" class='beaut'>
     </div>
+
+
 
     <!--
     <div class='row rowSMI'>
@@ -191,7 +206,16 @@
     </div>
     -->
   </div>
+
+<div class="pull-right">
+  <div class='copyR visable-sm hidden-xs '>
+    <p>
+      &copy; Kelley Michellucci 2016
+    </p>
+  </div>
 </div>
+</div>
+
     <div class="bDrops">
     </div>
     <!--

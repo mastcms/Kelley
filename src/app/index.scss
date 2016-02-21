@@ -12,21 +12,77 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // bower:scss
 // endbower
 
+@font-face { font-family: Caviar; src: url('../assets/fonts/CaviarDreams.ttf'); } 
+@font-face { font-family: Caviar; font-weight: bold; src: url('../assets/fonts/Caviar_Dreams_Bold.ttf');}
+@font-face { font-family: Quicksand; src: url('../assets/fonts/Quicksand-Regular.otf'); } 
+@font-face { font-family: Quicksand; font-weight: bold; src: url('../assets/fonts/Quicksand-Bold.otf');}
+
+h1{
+	&.special{
+		text-outline:1px #fff;
+	}
+}
+.wat{
+	overflow: hidden;
+}
+
+.special{
+	font-family: Quicksand;
+	font-weight:bold;
+	font-weight: 900;
+}
+.xskinney{
+	font-weight: 200;
+}
+
 $pCC:#FFD27E;
 $pC: #fff;
 $sC: #fffb;
+$highlight: #FAF7E8;
+$border: #B7914A;
+
 body{
 	-webkit-font-smoothing: antialiased;
-
+}
+.ski{
+   color: #222;
+   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: .5px;
+   -webkit-text-stroke-color: #bbb;
+   font-weight: 900;
+   text-transform: uppercase;
+}
+.show{
+	display: block !important;
+	z-index: 1005;
+	background-color: rgba(0,0,0,0.69);
 }
 .pbC{
 	background-color: $pC;
 }
 .sbC{
 	background-color: $sC !important;
+	overflow: hidden;
 }
 .skinney{
 	font-weight: 300;
+}
+.aux{
+	background-color: #ebebeb;
+	margin: 0px;
+	padding: 4px 30px;
+	&.aux2{
+		background-color: #FFD68A;
+		padding: 10px 30px;
+		margin-bottom: 6px;
+		color:#777;
+		cursor: pointer;
+		font-weight: 900;
+	}
+}
+.nwMargin{
+	margin-right: -20px;
+	margin-left: -20px;
 }
 .lPadding{
 	padding-left:5%;
@@ -37,6 +93,7 @@ body{
 .fT{
 	color: #333; 
 	border-bottom: 1px dashed #333;
+	padding-bottom: 15px
 }
 .zT{
 	position: relative;
@@ -52,29 +109,64 @@ body{
 		box-shadow: inset 1px 3px 3px 1px #111;
 	}
 	&.fake{
-		border-radius: 5000px;
+		border-radius: 00px;
 		border: 1px solid #ddd;
 		box-shadow: 0px 0px 0px #111;
 		&.f2{
-
 			display: inline-block;
 			overflow: hidden;
 			border-radius: 5000px;
-			border: 7px solid #95AEF3;
+			border: 9px solid #efefef;
 			box-shadow: 0px 0px 0px #111;
-			width: 350px;
-			height: 350px;
+			width: 500px;
+			height: 500px;
 			margin-right: -130px; 
 		}
 	}
 }
 .oShadow{
-	box-shadow: inset 3px 3px 5px #777;
+	box-shadow: 2px 3px 3px 3px #aaa !important;
 }
 .nwPadding{
 	padding: 0px;
 }
-
+.cModal{
+	position:fixed;
+	height:100%;
+	background-color: rgba(0,0,0,0.65);
+	z-index: 1005;
+	width:100%;
+	display:hidden;
+}
+.xOut{
+	position:absolute;
+	top:0;
+	right:0;
+	margin:20px;
+	color:#666;
+}
+.contactPanel{
+	margin: 170px auto 0px;
+	position: relative;
+	height: 350px;
+	padding: 20px;
+	max-width: 470px;
+	background-color: white;
+	border-radius: 10px;
+	border:1px solid #B7914A;
+	input{
+		width: 100%;
+		margin: 7px 0px;
+		border: 1px solid #bbb;
+	}
+	textarea{
+		width: 100%;
+		border: 1px solid #bbb;
+		margin: 7px 0px;
+	}
+}
+.cccontact{
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -125,7 +217,7 @@ body{
 		}
 	}
 	.active a{
-			background-color: #FAEBC9 !important;
+			background-color: #EFD5A3 !important;
 			color:#222;
 	}
 }
@@ -166,7 +258,7 @@ body{
 .runoff{
 	
 	position: relative;
-	
+	height: 490px;
 	z-index: 100;
 }
 .hContainer{
@@ -178,7 +270,7 @@ body{
 		background-position: center;	
 		position: relative;
 		border-radius: 1000px;
-		border: 14px solid #B9D7EA;
+		border: 14px solid #efefef;
 		&.ih1{
 			height: 490px;
 			width: 490px;
@@ -199,20 +291,43 @@ body{
 	color:#bbb;
 	float:right;
 	margin-top: 140px;
-	padding-right: 20px;
+	&.hidden-xs{
+		position: absolute;
+		bottom: 70px;
+		right: 45px;
+	}
 	p{
-		text-align: center;
+		text-align: right;
 		.FF{
 			position: fixed;
 			bottom: 28px;
 			right: 25px;
+			z-index: 1100;
+			&.FF2{
+				right:155px;
+			}
+			&.FF3{
+				padding: 5px 30px;
+				right: 50%;
+				margin-right: -70px;
+			}
+		}
+	}
+}
+.pull-right{
+	position: relative;
+	.copyR{
+		margin-top: -29px;
+		position: relative;
+		p{
+			position: relative;
 		}
 	}
 }
 .sAbout{
 	text-align: center;
 	margin-bottom: 40px;
-	color: #555;
+	color: #333;
 	.in{
 		.cImage{
 			display: inline-block;
@@ -221,7 +336,7 @@ body{
 			height: 160px;
 		    background-size: cover;
 		    border-radius: 500px;
-		    border: 5px solid #F2DBAB;
+		    border: 5px solid $pC;
 		}
 		.iContent{
 			
@@ -325,7 +440,7 @@ $hack: 40px;
 
     .cW{
         position: relative;
-        width: 100%;
+        width: 100% !important;
         /*
         margin: 35px auto 60px;  
         */
@@ -336,9 +451,13 @@ $hack: 40px;
 	        height:  88vh;
 	        width: 100%;
 	        margin:0px 00px 0px 0px!important;
-	        background-size: 100%;
+	        background-size: contain;
+	        background-clip:border-box;
 	        background-repeat: no-repeat;
 	        background-position: center bottom;
+	        img{
+	        	opacity: 0.55;
+	    	}	
 	        .banner{
 	        	width: 100%;
 	        	height:140px;
@@ -347,13 +466,22 @@ $hack: 40px;
 	       		padding: 100%; 
 	       		.bAbs{
 	       			position: absolute;
-	       			top:47%;
+	       			top:45%;
 	       			right: 10%;
 	       			left: 10%;
 	       			color: #111;
 	       			text-align: center;
 	       			&.b2{
-	       				top:43%;
+	       				top:42%;
+	       			}
+	       			&.bB{
+	       				top:70%;
+	       			}
+	       			&.bB2{
+	       				top:66%;
+	       			}
+	       			&.bT{
+	       				top: 10%;
 	       			}
 	       		}
 	        }
@@ -374,8 +502,63 @@ $hack: 40px;
       color: black;
       background-color:black;
     }
+/* SLIDESHOW MAGIC */
+	.sWrapper{
+		margin: 0 auto;
+		height: 100%;
+        img{
+        	left: -25%;
+
+        	position: absolute;
+        	overflow: hidden;
+        	height: 100%;
+        }
+	}
 
 /* END OF SLICK */
+
+@media(max-width: 535px){
+
+.contactPanel{
+	margin: 100px auto 0px;
+	height: 360px;
+	max-width: 300px;
+	background-color: white;
+}
+	.sAbout{
+		text-align: center;
+		margin-bottom: 40px;
+		color: #333;
+		height: 685px;
+		width: 100%;
+		position: relative;
+		.in{
+			.cImage{
+				display: inline-block;
+				text-align: center;
+				position: absolute;
+				right:10px;
+				top: 325px;
+				z-index: 1001;
+				width: 160px !important;
+				height: 160px;
+			    background-size: cover;
+			    border-radius: 500px;
+			    border: 5px solid #efefef;
+			}
+			.f2{
+				position: absolute;
+				margin: 0 auto;
+				display: block;
+				overflow: hidden;
+			}
+
+			.pDown{
+				margin-top: 530px;
+			}
+		}
+	}
+}
 
 /* BOOTSTRAP XS SIZE */
 @media (max-width: 767px){
@@ -415,7 +598,7 @@ $hack: 40px;
 			}
 		}
 		.navbar-right{
-			margin: 60px 6px;
+			margin: 30px 6px;
 			border: 1px solid #ccc;
 			.active a{
 					/* background-color: #F8F1E3 !important; */
@@ -423,6 +606,21 @@ $hack: 40px;
 					background-color: rgba(255, 255, 255, 0.52);
 					color:#222;
 			}
+		}
+	}
+
+	.wwat{
+		background-color: #fefefe;
+	}
+	/* BOOTSTRAP XS SIZE (AFTER NAV)*/
+	p
+	.copyR{
+		&.visable-xs{
+			float:none;
+			p{
+				margin: 0 auto;
+				text-align: center;
+			}	
 		}
 	}
 	.hContainer{
@@ -435,25 +633,39 @@ $hack: 40px;
 			background-position: center;	
 			position: relative;
 			border-radius: 1000px;
-			border: 14px solid #B9D7EA;
 			&.ih1{
 				height: 490px;
 				width: 490px;
-				left: 20%;
 				overflow: hidden;
 				position: absolute;
 				display: block;
 			}
 		}
 	}
+	.wrapper{
+		position: relative;
+		margin: 0 auto;
+		width:490px;
+		height: 490px;
+		left:50%;
+		margin-left: -245px;
+	}
+	.zT{
+		margin-top: 60px;
+	}
 }
-
+@media (max-width: 400px){
+	.beaut{
+		width: 100%;
+		padding-right: 15px;
+	}
+}
 @media (min-width: 967px){
 	.navbar-right{
 		margin-right:5%;
 	}
 	.lPadding{
-		padding-left: 2%;
+		padding-left: 4%;
 	}
 }
 /*
@@ -473,7 +685,14 @@ $hack: 40px;
 	}
 }
 */
-
+@media(max-width: 619px){
+	.copyR{
+		margin-top: 40px;
+	}
+}
+@media(max-width: 500px){
+	float:right;
+}
 @media(min-width: 992px){
 	/*
 	.cW{
@@ -497,6 +716,23 @@ $hack: 40px;
 	}
 	.lPadding{
 		padding-left: 0%;
+	}
+	.pDown{
+		&.fix{
+			margin-bottom: 270px;
+		}
+	}
+	.sWrapper{
+		width: 100%;
+        img{
+        	overflow: hidden;
+        	min-width: 100%;
+        	display: inline-block;
+        	text-align: center;
+        	position: relative !important;
+        	left: 00;
+        	right: 00;
+        }
 	}
 }
 /* BOOTSTRAP MD SIZE */
