@@ -25,9 +25,19 @@ h1{
 .wat{
 	overflow: hidden;
 }
-
+.cats{
+	display: block;
+	border:8px solid #efefef;
+	outline:4px solid white;
+	outline-offset:-16px;
+}
 .special{
-	font-family: Quicksand;
+	font-family: thonburi, Quicksand;
+	font-weight:bold;
+	font-weight: 900;
+}
+.special2{
+	font-family: Caviar;
 	font-weight:bold;
 	font-weight: 900;
 }
@@ -47,9 +57,11 @@ body{
 .ski{
    color: #222;
    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: .5px;
+   -webkit-text-stroke-width: .75px;
    -webkit-text-stroke-color: #bbb;
    font-weight: 900;
+   letter-spacing: 2px;
+   line-height: 70px;
    text-transform: uppercase;
 }
 .show{
@@ -73,11 +85,13 @@ body{
 	padding: 4px 30px;
 	&.aux2{
 		background-color: #FFD68A;
-		padding: 10px 30px;
-		margin-bottom: 6px;
-		color:#777;
+		padding: 5px 28px;
+		margin: 2px 0px 2px 10px;
+		color:#333;
 		cursor: pointer;
 		font-weight: 900;
+				background-color: #fff !important;
+				border: 1px solid #888;
 	}
 }
 .nwMargin{
@@ -110,7 +124,7 @@ body{
 	}
 	&.fake{
 		border-radius: 00px;
-		border: 1px solid #ddd;
+		border: 12px solid #efefef;
 		box-shadow: 0px 0px 0px #111;
 		&.f2{
 			display: inline-block;
@@ -262,7 +276,7 @@ body{
 	z-index: 100;
 }
 .hContainer{
-	height: 600px;
+	height: 630px;
 	.hImage{
 		margin: 0 auto; 
 		background-size: 100%;
@@ -303,8 +317,20 @@ body{
 			bottom: 28px;
 			right: 25px;
 			z-index: 1100;
+			&.FFF{
+				opacity: 0.77;
+			}
 			&.FF2{
-				right:155px;
+				right:160px;
+			}
+			&.FF4{
+				right:200px;
+			}
+			&.FF5{
+				right:240px;
+			}
+			&.FF6{
+				right:280px;
 			}
 			&.FF3{
 				padding: 5px 30px;
@@ -440,15 +466,13 @@ $hack: 40px;
 
     .cW{
         position: relative;
-        width: 100% !important;
-        /*
-        margin: 35px auto 60px;  
-        */
-	    .slider-for{
+        width: 90% !important;
+        margin: 65px auto 60px;  
+       	.slider-for{ 
 	        width: 100%;
 	    }
 	    .main{
-	        height:  88vh;
+	        height:  76vh;
 	        width: 100%;
 	        margin:0px 00px 0px 0px!important;
 	        background-size: contain;
@@ -461,7 +485,7 @@ $hack: 40px;
 	        .banner{
 	        	width: 100%;
 	        	height:140px;
-	        	vertical-align: center;
+				vertical-align: baseline;
 	        	background-color: rgba(255,255,255,0.37);
 	       		padding: 100%; 
 	       		.bAbs{
@@ -506,6 +530,7 @@ $hack: 40px;
 	.sWrapper{
 		margin: 0 auto;
 		height: 100%;
+
         img{
         	left: -25%;
 
@@ -659,6 +684,9 @@ $hack: 40px;
 		width: 100%;
 		padding-right: 15px;
 	}
+	.cW{
+		width: 100%;
+	}
 }
 @media (min-width: 967px){
 	.navbar-right{
@@ -708,6 +736,9 @@ $hack: 40px;
 		}
 	}
 	*/
+	.cW{
+		width: 70%;
+	}
 	.bImage{
 		height:450px !important;
 	}
