@@ -7,12 +7,14 @@
 
     <h1>Let's Talk!</h1>
     <h5>Leave me a message and I'll call you as soon as possible.</h5>
-    <input placeholder='Name'></input>
-    <input placeholder='Email'></input>
-    <input placeholder='Phone Number'></input>
-    <textarea placeholder='comment'></textarea>
-    <span id="sendemail" class='pull-right aux aux2' style='margin-top:5px;'>Talk to you soon!</span>
-    <span class='xOut'>X</span>
+    <form name="forme"  method="POST" action="http://45.55.4.123:3030/email">
+      <input name="name" placeholder='Name' />
+      <input name="email" placeholder='Email' />
+      <input name="phone" placeholder='Phone Number'/>
+      <textarea name="comment" placeholder='Comment'></textarea>
+      <input  type="submit" id="sendemail" class='pull-right aux aux2' style='margin-top:5px;' value="Talk to you soon!"/>
+      <span class='xOut'>x</span>
+    </form>
   </div>
  </div>
 
