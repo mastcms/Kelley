@@ -16,7 +16,12 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 @font-face { font-family: Caviar; font-weight: bold; src: url('../assets/fonts/Caviar_Dreams_Bold.ttf');}
 @font-face { font-family: Quicksand; src: url('../assets/fonts/Quicksand-Regular.otf'); } 
 @font-face { font-family: Quicksand; font-weight: bold; src: url('../assets/fonts/Quicksand-Bold.otf');}
+@font-face { font-family: Pacifico; src: url('../assets/fonts/pacifico.ttf'); } 
 
+.lP{
+	margin: 0px 5px;
+	padding: 0px 1px;
+}
 h1{
 	&.special{
 		text-outline:1px #fff;
@@ -31,15 +36,28 @@ h1{
 	outline:4px solid white;
 	outline-offset:-16px;
 }
+.border-box{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border: 12px solid #efefef;
+}
 .special{
 	font-family: thonburi, Quicksand;
 	font-weight:bold;
 	font-weight: 900;
+	letter-spacing: .4px;
 }
 .special2{
-	font-family: Caviar;
-	font-weight:bold;
-	font-weight: 900;
+	font-family: thonburi, Quicksand;
+	
+	font-weight: 300;
+	letter-spacing: 2px;
+	&.special{
+		letter-spacing: none;
+	}
 }
 .xskinney{
 	font-weight: 200;
@@ -56,13 +74,18 @@ body{
 }
 .ski{
    color: #222;
-   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+   -webkit-text-fill-color: black; /* Will override color (regardless of order) 
    -webkit-text-stroke-width: .75px;
-   -webkit-text-stroke-color: #bbb;
-   font-weight: 900;
+   -webkit-text-stroke-color: #bbb;  */
+   font-weight: 500;
    letter-spacing: 2px;
    line-height: 70px;
    text-transform: uppercase;
+}
+@media(max-width: 500px){
+	.ski{
+		line-height: 59px;
+	}
 }
 .show{
 	display: block !important;
@@ -480,7 +503,7 @@ $hack: 40px;
 	        background-repeat: no-repeat;
 	        background-position: center bottom;
 	        img{
-	        	opacity: 0.55;
+	        	opacity: 0.25;
 	    	}	
 	        .banner{
 	        	width: 100%;
@@ -587,6 +610,64 @@ $hack: 40px;
 
 /* BOOTSTRAP XS SIZE */
 @media (max-width: 767px){
+	.aux{
+		&.aux3{
+			padding: 2px 10px;
+		}
+		&.aux5{
+			width: 200px !important;
+			margin-left: -50px;
+			margin-top: 20px;
+		}
+	}
+	.cpiss{
+
+		width: 172px;
+		li{	
+			margin-left: -10px;
+			width: 171px;
+			h5{
+				width: 170px;
+				margin-right:0px;
+				margin-left: 0px;
+
+			}
+		}
+	}
+	.cW{
+		.main{
+    .banner{
+    	width: 100%;
+    	height:140px;
+		vertical-align: baseline;
+    	background-color: rgba(255,255,255,0.37);
+   		padding: 100%; 
+   		.bAbs{
+   			position: absolute;
+   			top:29%;
+   			right: 10%;
+   			left: 10%;
+   			color: #111;
+   			text-align: center;
+   			&.b2{
+   				top:23%;
+   			}
+   			&.bB{
+   				top:35%;
+   			}
+   			&.bB2{
+   				top:30%;
+   			}
+   			&.bT{
+   				top: 24%;
+   			}
+   			&.b4{
+   				top:5%;
+   			}
+   		}
+   	}
+   }
+   }
 	.navbar-collapse{
 		border:none;
 	}
@@ -638,10 +719,11 @@ $hack: 40px;
 		background-color: #fefefe;
 	}
 	/* BOOTSTRAP XS SIZE (AFTER NAV)*/
-	p
+	
 	.copyR{
+		float:right;
 		&.visable-xs{
-			float:none;
+			float: none;
 			p{
 				margin: 0 auto;
 				text-align: center;
@@ -676,7 +758,7 @@ $hack: 40px;
 		margin-left: -245px;
 	}
 	.zT{
-		margin-top: 60px;
+		margin-top: 360px;
 	}
 }
 @media (max-width: 400px){
