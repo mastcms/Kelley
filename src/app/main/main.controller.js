@@ -16,7 +16,7 @@
         console.log('waddt');
         return false;
       });
-      $('.cModal').on('click', function(){
+      $('#sendemail').on('click', function(){
         $('.cModal').fadeOut('slow');
       });
 
