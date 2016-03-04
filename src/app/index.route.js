@@ -13,24 +13,24 @@
         controllerAs: 'main'
       }).when('/mls', {
         templateUrl: 'app/main/mls.html',
-        controller: '',
-        controllerAs: ''
+        controller: 'MlsController',
+        controllerAs: 'MlsController'
       }).when('/background', {
         templateUrl: 'app/main/background.html',
-        controller: '',
-        controllerAs: ''
+        controller: 'BackgroundController',
+        controllerAs: 'BackgroundController'
       }).when('/sellers', {
         templateUrl: 'app/main/sellers.html',
-        controller: '',
-        controllerAs: ''
+        controller: 'SellerController',
+        controllerAs: 'SellerController'
       }).when('/buyers', {
         templateUrl: 'app/main/buyers.html',
-        controller: '',
-        controllerAs: ''
+        controller: 'BuyerController',
+        controllerAs: 'BuyerController'
       }).when('/testimonials', {
         templateUrl: 'app/main/testimonials.html',
-        controller: '',
-        controllerAs: ''
+        controller: 'TestimonialsController',
+        controllerAs: 'TestimonialsController'
       })
       .otherwise({
         redirectTo: '/'

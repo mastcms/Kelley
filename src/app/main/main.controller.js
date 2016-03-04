@@ -4,25 +4,68 @@
   angular
     .module('kelley')
     .controller('ModalController', ModalController)
-    .controller('MainController', MainController);
+    .controller('NavController', NavController)
+
+    .controller('MainController', MainController)
+    .controller('MlsController', MlsController)
+    .controller('SellerController', SellerController)
+    .controller('BuyerController', BuyerController)
+    .controller('BackgroundController', BackgroundController)
+    .controller('TestimonialsController', TestimonialsController)
 
   /** @ngInject */
-  function ModalController($timeout, webDevTec, toastr){
+  var last = "";
+  function ModalController($timeout){
       $(document).ready(function(){
         $('.cModal').hide();
       })
   }
 
+  function NavController($scope){
+    $scope.test = function(event){
+      $(this).parent().addClass('active');
+    }
+  }
+
+  function MlsController($scope){
+    $(last).removeClass('active');
+    $("#mlsli").addClass('active');
+    last = '#mlsli';
+  }
+  function SellerController(){
+    $(last).removeClass('active');
+    $("#sellerli").addClass('active');
+    last = '#sellerli';
+  }
+  function BuyerController(){
+    $(last).removeClass('active');
+    $("#buyerli").addClass('active');
+    last = '#buyerli';
+  }
+  function BackgroundController(){
+    $(last).removeClass('active');
+    $("#backgroundli").addClass('active');
+    last = '#backgroundli';
+  }
+  function TestimonialsController(){
+    $(last).removeClass('active');
+    $("#testili").addClass('active');
+    last = '#testili';
+  }
   function MainController($timeout, webDevTec, toastr) {
-      $('.cccontact').click(function(){
-        console.log('wat');
-        $('.cModal').fadeIn('slow');
-        console.log('waddt');
-        return false;
-      });
-      $('#sendemail').on('click', function(){
-        $('.cModal').fadeOut('slow');
-      });
+    $(last).removeClass('active');
+    $("#featuredli").addClass('active');
+    last = '#featuredli';
+
+    $('.cccontact').click(function(){
+      console.log('wat');
+      $('.cModal').fadeIn('slow');
+      console.log('waddt');
+      return false;
+    });
+    $('#sendemail').on('click', function(){
+      $('.cModal').fadeOut('slow');
+    });
 
 
     var vm = this;
