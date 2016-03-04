@@ -3,13 +3,17 @@
 
   angular
     .module('kelley')
+    .controller('ModalController', ModalController)
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  function ModalController($timeout, webDevTec, toastr){
       $(document).ready(function(){
         $('.cModal').hide();
       })
+  }
+
+  function MainController($timeout, webDevTec, toastr) {
       $('.cccontact').click(function(){
         console.log('wat');
         $('.cModal').fadeIn('slow');

@@ -12,7 +12,6 @@
     <!-- run `gulp inject` to automatically populate bower styles dependencies -->
     <!-- endbower -->
     <!-- endbuild -->
-
     <!-- build:css({.tmp/serve,src}) styles/app.css -->
     <!-- inject:css -->
     <!-- css files will be automatically insert here -->
@@ -23,9 +22,143 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    
+    <div class="container-fluid sbC wat nwPadding special" ng-controller="ModalController">
+     <div id='cModal' class='cModal' 
+     style=''>
+      <div class='contactPanel'>
 
+        <h1>Let's Talk!</h1>
+        <h5>Leave me a message and I'll call you as soon as possible.</h5>
+        <form name="forme"  method="POST" action="http://45.55.4.123:3030/email">
+          <input name="name" placeholder='Name' />
+          <input name="email" placeholder='Email' />
+          <input name="phone" placeholder='Phone Number'/>
+          <textarea name="comment" placeholder='Comment'></textarea>
+          <input  type="submit" id="sendemail" class='pull-right aux aux2' style='margin-top:5px;' value="Talk to you soon!"/>
+          <span class='xOut'>x</span>
+        </form>
+      </div>
+     </div>
+        <nav class="navbar navbar-default navbar-fixed-top pbC">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed" aria-expanded="false" aria-controls="navbar">
+                <span class='uhM'>Menu<span>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="uh" href="#/">
+              <br/>
+                <!--
+                <img src="assets/images/ihouse.png"/>
+                -->
+                <div>
+                <img src='assets/images/cursive.png' class='bName' />
+                </div>
+                <br/><br/>
+              </a>
+            </div>
+            
+            <div id="navbar" class="navbar-collapse"  ng-class="{collapse: isCollapsed}">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active wwat"><a href="#/featured">Featured Listings</a></li>
+                <li><a class='wwat' href="#/mls">MLS Search</a></li>
+                <li><a class='wwat' href="#/sellers">Sellers</a></li>
+                <li><a class='wwat' href="#/buyers">Buyers</a></li>
+                <li><a href="#/testimonials">Testimonials</a></li>
+                <li><a class='wwat' href="#/background">Background</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+    </div>
     <div class="sbC" ng-view></div>
+<br/><br/><br/>
 
+
+
+    <div class='copyR visable-xs hidden-sm hidden-md hidden-lg hidden-xl'>
+      <p>
+        <a href='https://www.linkedin.com/in/kelley-michelucci-87416a5a?trk=nav_responsive_tab_profile'><img class='lP'  src='/assets/images/klinkedin.png' width="33px"></a>
+        <a href='http://www.realtor.com/realestateagents/Kelley-Michelucci_Burlingame_CA_1986447_546679008'><img class='lP' src='/assets/images/krealtor.png' width="33px"></a>
+        <a href='http://www.trulia.com/profile/kelley-michelucci-agent-burlingame-ca-zgdtfdpq/overview'>
+          <img class='lP' src='/assets/images/ktrulia.png' width="33px">
+        </a>
+        <a href='http://www.zillow.com/profile/Kelley-Michelucci/'>
+          <img class='lP' src='/assets/images/kzillow.png' width="33px">
+        </a>
+        <br/><br/>
+        <span>
+          &copy; Kelley Michellucci 2016
+        </span>
+        <br/><br/>
+        <span class='aux aux2 FF FF3 cccontact' style='' id='contact'>
+          Let's Talk
+        </span>
+      </p>
+    </div>
+    <div class='copyR visable-sm hidden-xs '>
+      <p>
+        <a href='https://www.linkedin.com/in/kelley-michelucci-87416a5a?trk=nav_responsive_tab_profile'>
+          <img class='FF FF2 FFF' src='/assets/images/klinkedin.png' width="33px">
+        </a>
+        <a href='http://www.realtor.com/realestateagents/Kelley-Michelucci_Burlingame_CA_1986447_546679008'>
+          <img class='FF FF4 FFF' src='/assets/images/krealtor.png' width="33px">
+        </a>
+        <a href='http://www.trulia.com/profile/kelley-michelucci-agent-burlingame-ca-zgdtfdpq/overview'>
+          <img class='FF FF5 FFF' src='/assets/images/ktrulia.png' width="33px">
+        </a>
+        <a href='http://www.zillow.com/profile/Kelley-Michelucci/'>
+          <img class='FF FF6 FFF' src='/assets/images/kzillow.png' width="33px">
+        </a>
+        <BR/>
+        <span class='aux aux2 FF cccontact' style='' id='contact'>Let's Talk</span>
+      </p>
+    </div>
+    <div class='fancy'>
+      <img src="/assets/images/kArt2.png" class='beaut'>
+    </div>
+
+
+
+    <!--
+    <div class='row rowSMI'>
+      <div  class='col-xs-2'>
+      <image class='SMI' src='assets/images/facebook.png'/></image>
+      </div>
+      <div  class='col-xs-2'>
+      <image class='SMI' src='assets/images/linkedin.png'/></image>
+      </div>
+      <div  class='col-xs-2'>
+      <image class='SMI' src='assets/images/twitter.png'/></image>
+      </div>
+      <div  class='col-xs-2'>
+       <image class='SMI' src='assets/images/mail.png'/></image>
+      </div>
+      <div  class='col-xs-2'>
+        <image class='SMI' src='assets/images/insta.png'/></image>
+      </div>
+      <div  class='col-xs-2'>
+        <image class='SMI' src='assets/images/youtube.png'/></image>
+      </div>
+    </div>
+    -->
+  </div>
+
+<div class="pull-right">
+  <div class='copyR visable-sm hidden-xs '>
+    <p>
+      &copy; Kelley Michellucci 2016
+    </p>
+  </div>
+</div>
+</div>
+
+    <div class="bDrops">
+    </div>
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
     <!-- run `gulp inject` to automatically populate bower script dependencies -->
