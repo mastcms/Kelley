@@ -4,12 +4,18 @@
   angular
     .module('kelley')
         .controller('MainController', MainController)
+	.controller('ModalController', ModalController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  function ModalController($timeout, webDevTec, toastr){
       $(document).ready(function(){
         $('.cModal').hide();
       })
+  }
+  function MainController($timeout, webDevTec, toastr) {
+ //     $(document).ready(function(){
+        $('.cModal').hide();
+   //   })
       $('.cccontact').click(function(){
         console.log('wat');
         $('.cModal').fadeIn('slow');
@@ -19,6 +25,10 @@
       $('#sendemail').on('click', function(){
         $('.cModal').fadeOut('slow');
       });
+      $('.xOut').on('click', function(){
+        $('.cModal').fadeOut('slow');
+      });
+
 
 
     var vm = this;
