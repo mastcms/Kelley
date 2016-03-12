@@ -42,7 +42,7 @@ h1{
 	right: 0;
 	top: 0;
 	bottom: 0;
-	border: 12px solid #efefef;
+	border: 12px solid #fff;
 }
 .special{
 	font-family: thonburi, Quicksand;
@@ -50,11 +50,11 @@ h1{
 	font-weight: 900;
 	letter-spacing: .4px;
 }
-.special2{
-	font-family: thonburi, Quicksand;
-	
+.special2{	
 	font-weight: 300;
 	letter-spacing: 2px;
+	padding: 40px;
+	background-color: rgba(255,255,255,0.8);
 	&.special{
 		letter-spacing: none;
 	}
@@ -77,7 +77,6 @@ body{
    -webkit-text-fill-color: black; /* Will override color (regardless of order) 
    -webkit-text-stroke-width: .75px;
    -webkit-text-stroke-color: #bbb;  */
-   font-weight: 500;
    letter-spacing: 2px;
    line-height: 70px;
    text-transform: uppercase;
@@ -247,10 +246,12 @@ body{
 		}
 	}
 	.navbar-right{
-		margin-top: 20px;
+		margin-top: 25px;
 		margin-right: 3px;
+		font-size: 12px;
+		font-weight: 500;
 		a{
-			padding: 10px 15px 10px;
+			padding: 5px 10px 5px;
 		}
 	}
 	.active a{
@@ -435,6 +436,8 @@ $hack: 40px;
 
 .fancy{
 	z-index: 40;
+	height: 213px;
+	margin-top: 0px;
 }
 .bDrops{
 	background-image: url('/assets/images/kArt2a.png');
@@ -451,7 +454,12 @@ $hack: 40px;
 .beaut{
 	margin-top: 30px;
 	margin-left: 20px;
+	height: 200px;
 	max-width: 380px;
+	background-image: url('/assets/images/kArt2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .row{
 	&.caroRow{
@@ -503,7 +511,7 @@ $hack: 40px;
 	        background-repeat: no-repeat;
 	        background-position: center bottom;
 	        img{
-	        	opacity: 0.25;
+	        	opacity: 0.95;
 	    	}	
 	        .banner{
 	        	width: 100%;
