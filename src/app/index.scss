@@ -30,6 +30,11 @@ h1{
 .wat{
 	overflow: hidden;
 }
+.fuuu{
+	position: absolute;
+	bottom:10px;
+	right:0px;
+}
 .cats{
 	display: block;
 	border:8px solid #efefef;
@@ -361,6 +366,9 @@ body{
 				right: 50%;
 				margin-right: -70px;
 			}
+			&:hover{
+				opacity: 0.9;
+			}
 		}
 	}
 }
@@ -460,6 +468,18 @@ $hack: 40px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+}
+.psig{
+	position: absolute;
+	background-image: url('/assets/images/cursive.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10px;
+    width: 72px;
+    left:-18px;
+    bottom:18px;
 }
 .row{
 	&.caroRow{
